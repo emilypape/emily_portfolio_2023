@@ -19,7 +19,7 @@ export default function Bio() {
         </div>
         <img
           src={headshot}
-          className='rounded-br-full rounded-tl-full rounded-tr-full max-h-[23em] max-w-[28em] shadow-xl ml-10 shadow-inner xl:mr-52 lg:mr-52 md:mr-16'
+          className='rounded-br-full rounded-tl-full rounded-tr-full max-h-[23em] max-w-[28em] shadow-xl ml-10 shadow-inner xl:mr-52 lg:mr-52 md:mr-16 '
         />
       </div>
     </div>
