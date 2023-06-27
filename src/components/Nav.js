@@ -7,7 +7,6 @@ export default function Nav() {
         <div className='hover:text-black xl:mr-10  lg:mr-10 md:mr-6'>Bio</div>
         <div className='hover:text-black xl:mr-10  lg:mr-10 md:mr-6'>Featured</div>
         <div className='hover:text-black xl:mr-10  lg:mr-10 md:mr-6'>Portfolio</div>
-        <div className='hover:text-black xl:mr-10 lg:mr-10 md:mr-6'>Resume</div>
         <div className='hover:text-black xl:mr-10 lg:mr-10 md:mr-6'>Contact</div>
       </div>
     </div>
