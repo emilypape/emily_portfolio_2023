@@ -7,33 +7,10 @@ export default function Portfolio() {
   return (
     <div>
       <div className='text-start text-2xl text-black font-bold xl:ml-52 lg:ml-52 md:ml-16 xl:mr-52 lg:mr-52 md:mr-16 mt-14'>
-        Featured Projects
+        Portfolio
       </div>
-      <div className='flex mt-5'>
-        <div className=' mt-8 max-w-[35em] text-md text-start xl:ml-52 lg:ml-52 md:ml-16 mr-[15em] text-gray-500'>
-          <div className=''>
-            My projects offer a creative, innovative design style combined with popular components and style
-            conventions. I've designed numerous websites and developed two independent applications and assisted with
-            several applications that are deployed and available to the public. I'm well-versed in four plus coding
-            languages displayed in my featured projects, including{' '}
-            <span className='font-extrabold text-transparent text-md bg-clip-text bg-gradient-to-r from-indigo-600 via-violet-500 to-fuchsia-600 '>
-              Javascript
-            </span>{' '}
-            and{' '}
-            <span className='font-extrabold text-transparent text-md bg-clip-text bg-gradient-to-r from-indigo-600 via-violet-500 to-fuchsia-600 '>
-              React.js
-            </span>
-            , and proficient in{' '}
-            <span className='font-extrabold text-transparent text-md bg-clip-text bg-gradient-to-r from-indigo-600 via-violet-500 to-fuchsia-600 '>
-              UI/UX design
-            </span>
-            .
-          </div>
-          <div className='mt-10 ml-[13em]'>
-            <Icon icon='radix-icons:github-logo' color='gray' width={50} height={50} />
-          </div>
-        </div>
-        <div className='relative flex mt-[17em]'>
+      <div className='flex '>
+        <div className='relative flex mt-44 ml-[25em]'>
           <div classNameName='w-96 mx-auto'>
             {/* <!-- first --> */}
             <div className=''>
@@ -255,6 +232,29 @@ export default function Portfolio() {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+        <div className='  max-w-[35em] text-md text-start xl:ml-52 lg:ml-72 md:ml-16 mr-[15em] text-gray-500'>
+          <div className='mt-[10em]'>
+            My projects offer a creative, innovative design style combined with popular components and style
+            conventions. I've designed numerous websites and developed two independent applications and assisted with
+            several applications that are deployed and available to the public. I'm well-versed in four plus coding
+            languages displayed in my featured projects, including{' '}
+            <span className='font-extrabold text-transparent text-md bg-clip-text bg-gradient-to-r from-indigo-600 via-violet-500 to-fuchsia-600 '>
+              Javascript
+            </span>{' '}
+            and{' '}
+            <span className='font-extrabold text-transparent text-md bg-clip-text bg-gradient-to-r from-indigo-600 via-violet-500 to-fuchsia-600 '>
+              React.js
+            </span>
+            , and proficient in{' '}
+            <span className='font-extrabold text-transparent text-md bg-clip-text bg-gradient-to-r from-indigo-600 via-violet-500 to-fuchsia-600 '>
+              UI/UX design
+            </span>
+            .
+            <a target='_blank' href='https://github.com/emilypape' className=' flex justify-center mt-10  '>
+              <Icon icon='radix-icons:github-logo' color='gray' width={50} height={50} />
+            </a>
           </div>
         </div>
       </div>
