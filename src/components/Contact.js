@@ -3,7 +3,7 @@ import { Icon } from '@iconify/react';
 
 export default function Contact() {
   return (
-    <div>
+    <div className='bg-gray-200'>
       <div className='mt-52 flex justify-between xl:ml-52 lg:ml-52 md:ml-16 xl:mr-52 lg:mr-52 md:mr-16'>
         <div className='mt-10 '>
           <div>
@@ -15,11 +15,11 @@ export default function Contact() {
             </div>
             <div className=' text-3xl tracking-tight font-bold text-start text-black'>Tell me about your</div>
             <div className='text-start mb-4 text-3xl font-extrabold text-transparent text-md bg-clip-text bg-gradient-to-r from-indigo-600 via-violet-500 to-fuchsia-600 '>
-              project.
+              team.
             </div>
           </div>
-          <div className='text-gray-400 mt-5 font-bold'>Let's create something together 👋 </div>
-          <div className='shadow-lg rounded-lg p-2 mt-12 flex'>
+          <div className='text-gray-500 mt-5 font-bold'>Let's create something together 👋 </div>
+          <div className='shadow-lg rounded-lg p-2 mt-12 flex bg-white'>
             <Icon icon='line-md:email-twotone' color='gray' width={40} height={40} />
             <div className='text-start ml-5'>
               <div className='font-bold'>Mail me at</div>
@@ -36,7 +36,7 @@ export default function Contact() {
             </a>
           </div>
         </div>
-        <section class='bg-white mt-10 '>
+        <section class='bg-gray-200 mt-10 '>
           <div class='  mx-auto max-w-screen-md'>
             <h2 class='mb-4 text-3xl tracking-tight font-bold text-end text-gray-900 dark:text-black'>
               Send me a message 🚀
@@ -67,16 +67,11 @@ export default function Contact() {
                   class='block p-2.5 w-full text-sm  bg-white-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 '
                   placeholder='Tell me a little more about the role...'></textarea>
               </div>
-              <button
-                type='submit'
-                class='py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 '>
-                Send message
-              </button>
             </form>
           </div>
           <button
             type='button'
-            class='font-semibold  py-2  text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300   rounded-lg text-sm px-8 py-2.5 text-center mr-2 mb-16'>
+            class='font-semibold mt-10  py-2  text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300   rounded-lg text-sm px-8 py-2.5 text-center mr-2 mb-16'>
             Send Message
           </button>
         </section>
