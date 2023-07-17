@@ -5,7 +5,7 @@ export default function Contact() {
   return (
     <div className='bg-gray-200'>
       <div className='mt-52 flex justify-between xl:ml-52 lg:ml-52 md:ml-16 xl:mr-52 lg:mr-52 md:mr-16'>
-        <div className='mt-10 '>
+        <div className='mt-10 hidden lg:blocl md:block xl:block'>
           <div>
             <div className='text-start text-3xl tracking-tight font-bold  text-black'>
               Let's{' '}

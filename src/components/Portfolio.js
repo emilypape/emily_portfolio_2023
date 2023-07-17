@@ -10,7 +10,7 @@ export default function Portfolio() {
         Portfolio
       </div>
       <div className='flex '>
-        <div className='relative flex mt-44 ml-[25em]'>
+        <div className='relative flex mt-[18em] lg:mt-44 md:mt-44 xl:mt-44 ml-[25em]'>
           <div classNameName='w-96 mx-auto'>
             {/* <!-- first --> */}
             <div className=''>
@@ -235,7 +235,7 @@ export default function Portfolio() {
           </div>
         </div>
         <div className='  max-w-[35em] text-md text-start xl:ml-52 lg:ml-72 md:ml-16 mr-[15em] text-gray-500'>
-          <div className='mt-[10em]'>
+          <div className='hidden lg:blockl md:block xl:block mt-[10em]'>
             My projects offer a creative, innovative design style combined with popular components and style
             conventions. I've designed numerous websites and developed two independent applications and assisted with
             several applications that are deployed and available to the public. I'm well-versed in four plus coding
