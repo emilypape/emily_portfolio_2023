@@ -10,7 +10,7 @@ export default function Portfolio() {
         Portfolio
       </div>
       <div className='flex '>
-        <div className='relative flex mt-[18em] lg:mt-44 md:mt-44 xl:mt-44 lg:ml-[25em] md:ml-[25em] xl:ml-[25em] ml-[20em]'>
+        <div className='relative mb-[10em] md:mb-0 lg:mb-0 xl:mb-0 flex mt-[18em] lg:mt-44 md:mt-44 xl:mt-44 lg:ml-[25em] md:ml-[25em] xl:ml-[25em] ml-[20em]'>
           <div classNameName='w-96 mx-auto'>
             {/* <!-- first --> */}
             <div className=''>

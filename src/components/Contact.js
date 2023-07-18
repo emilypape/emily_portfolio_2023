@@ -3,8 +3,8 @@ import { Icon } from '@iconify/react';
 
 export default function Contact() {
   return (
-    <div className='bg-gray-200'>
-      <div className='mt-52 flex justify-between xl:ml-52 lg:ml-52 md:ml-16 xl:mr-52 lg:mr-52 md:mr-16'>
+    <div className=' bg-gray-200'>
+      <div className=' mt-52 flex justify-between xl:ml-52 lg:ml-52 md:ml-16 xl:mr-52 lg:mr-52 md:mr-16'>
         <div className='mt-10 hidden lg:blocl md:block xl:block'>
           <div>
             <div className='text-start text-3xl tracking-tight font-bold  text-black'>
@@ -36,9 +36,9 @@ export default function Contact() {
             </a>
           </div>
         </div>
-        <section class='bg-gray-200 mt-10 '>
+        <section class='bg-gray-200'>
           <div class='  mx-auto max-w-screen-md'>
-            <h2 class='mb-4 text-3xl tracking-tight font-bold text-end text-gray-900 dark:text-black'>
+            <h2 class='py-3 mb-4 text-3xl tracking-tight font-bold text-end text-gray-900 dark:text-black'>
               Send me a message 🚀
             </h2>
             <form action='#' class='space-y-8 min-w-[40em]'>
