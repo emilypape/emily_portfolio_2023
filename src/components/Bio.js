@@ -4,15 +4,15 @@ import headshot from '../assets/images/headshot.jpg';
 export default function Bio() {
   return (
     <div className=''>
-      <div className='flex  lg:text-start md:text-start xl:text-start text-center xl:ml-52 lg:ml-52 md:ml-16'>
-        <div className='flex-col '>
+      <div className='flex ml-16 lg:text-start md:text-start xl:text-start  xl:ml-52 lg:ml-52 md:ml-16'>
+        <div className='flex-col mr-[-10em] lg:mr-0 md:mr-0 xl:mr-0'>
           <img
             src={headshot}
-            className='lg:hidden xl:hidden med:hidden rounded-br-full rounded-tl-full rounded-tr-full max-h-[23em] max-w-[28em] shadow-xl ml-10 shadow-inner '
+            className='lg:hidden xl:hidden med:hidden float-right  rounded-br-lg rounded-tl-lg max-h-[13em] rounded-bl-lg rounded-tr-lg  shadow-xl ml-5 shadow-inner '
           />
-          <div className='text-black font-bold text-4xl mb-1'>Emily Pape</div>
-          <div className='text-gray-500 font-semibold text-lg  mb-3'>Fullstack Developer</div>
-          <p className='text-gray-500 lg:text-start md:text-start xl:text-start mr-10 '>
+          <div className='text-black text-start font-bold text-4xl mb-1'>Emily Pape</div>
+          <div className='text-gray-500 text-start font-semibold text-lg  mb-3'>Fullstack Developer</div>
+          <p className='text-start text-gray-500 lg:text-start md:text-start xl:text-start lg:mr-10 md:mr-10 xl:mr-10'>
             Hello! I'm Emily and I am an avid hiker and outdoors-woman that you can find on the computer during the
             weekdays. I consider myself an exceptionally well rounded, organized and resourceful Professional. I have
             three years of development experience and a solid academic background including a Bachelors degree and
