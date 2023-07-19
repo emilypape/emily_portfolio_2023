@@ -4,11 +4,11 @@ import headshot from '../assets/images/headshot.jpg';
 export default function Bio() {
   return (
     <div className=''>
-      <div className='flex ml-16 lg:text-start md:text-start xl:text-start  xl:ml-52 lg:ml-52 md:ml-16'>
+      <div className='flex ml-16 lg:text-start md:text-start xl:text-start  xl:ml-52 lg:ml-52 '>
         <div className='flex-col mr-[-10em] lg:mr-0 md:mr-0 xl:mr-0'>
           <img
             src={headshot}
-            className='lg:hidden xl:hidden med:hidden float-right  rounded-br-lg rounded-tl-lg max-h-[13em] rounded-bl-lg rounded-tr-lg  shadow-xl ml-5 shadow-inner '
+            className='lg:hidden xl:hidden md:max-h-[15em] md:ml-10 float-right  rounded-br-lg rounded-tl-lg max-h-[13em] rounded-bl-lg rounded-tr-lg  shadow-xl ml-5 shadow-inner '
           />
           <div className='text-black text-start font-bold text-4xl mb-1'>Emily Pape</div>
           <div className='text-gray-500 text-start font-semibold text-lg  mb-3'>Fullstack Developer</div>
@@ -33,7 +33,7 @@ export default function Bio() {
         </div>
         <img
           src={headshot}
-          className='hidden lg:block xl:block md:block rounded-br-full rounded-tl-full rounded-tr-full max-h-[23em] max-w-[28em] shadow-xl ml-10 shadow-inner xl:mr-52 lg:mr-52 md:mr-16 '
+          className='hidden lg:block xl:block rounded-br-full rounded-tl-full rounded-tr-full max-h-[23em] max-w-[28em] shadow-xl ml-10 shadow-inner xl:mr-52 lg:mr-52 md:mr-16 '
         />
       </div>
     </div>
