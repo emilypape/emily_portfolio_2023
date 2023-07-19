@@ -6,11 +6,11 @@ import { Icon } from '@iconify/react';
 export default function Portfolio() {
   return (
     <div>
-      <div className='text-start ml-16 text-2xl text-black font-bold xl:ml-52 lg:ml-52 md:ml-16 xl:mr-52 lg:mr-52 md:mr-16 mt-14'>
+      <div className='text-start ml-16 text-2xl text-black font-bold xl:ml-52 lg:ml-52 md:ml-16 xl:mr-52 lg:mr-52  mt-14'>
         Portfolio
       </div>
       <div className='flex '>
-        <div className='relative mb-[10em] md:mb-0 lg:mb-0 xl:mb-0 flex mt-[18em] lg:mt-44 md:mt-44 xl:mt-44 lg:ml-[25em] md:ml-[25em] xl:ml-[25em] ml-[20em]'>
+        <div className='relative mb-[10em] md:mb-32 lg:mb-0 xl:mb-0 flex mt-[18em] lg:mt-44 md:mt-72 xl:mt-44 lg:ml-[25em]  xl:ml-[25em] ml-[20em]'>
           <div classNameName='w-96 mx-auto'>
             {/* <!-- first --> */}
             <div className=''>
@@ -195,7 +195,7 @@ export default function Portfolio() {
             {/* <!-- three --> */}
           </div>
         </div>
-        <div className='  max-w-[35em] text-md text-start xl:ml-52 lg:ml-72 md:ml-16 mr-[15em] text-gray-500'>
+        <div className='  max-w-[35em] text-md text-start xl:ml-52 lg:ml-72 md:ml-16 md:hidden lg:block  mr-[15em] text-gray-500'>
           <div className='hidden lg:blockl md:block xl:block mt-[10em]'>
             My projects offer a creative, innovative design style combined with popular components and style
             conventions. I've designed numerous websites and developed two independent applications and assisted with
