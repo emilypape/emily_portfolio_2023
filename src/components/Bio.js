@@ -1,17 +1,28 @@
 import { useState } from 'react';
 import headshot from '../assets/images/headshot.jpg';
-
+import { Icon } from '@iconify/react';
 export default function Bio() {
   return (
     <div className=''>
-      <div className='flex ml-16 lg:text-start md:text-start xl:text-start  xl:ml-52 lg:ml-52 '>
+      <div className='flex ml-16 lg:text-start md:text-start xl:text-start md:mr-14 lg:mr-0 xl:mr-0  xl:ml-52 lg:ml-52 '>
         <div className='flex-col mr-[-10em] lg:mr-0 md:mr-0 xl:mr-0'>
           <img
             src={headshot}
             className='lg:hidden xl:hidden md:max-h-[15em] md:ml-10 float-right  rounded-br-lg rounded-tl-lg max-h-[13em] rounded-bl-lg rounded-tr-lg  shadow-xl ml-5 shadow-inner '
           />
           <div className='text-black text-start font-bold text-4xl mb-1'>Emily Pape</div>
-          <div className='text-gray-500 text-start font-semibold text-lg  mb-3'>Fullstack Developer</div>
+          <div className='flex'>
+            <div className='text-gray-500 text-start font-semibold text-lg  mb-3'>Fullstack Developer</div>
+            <a target='_blank' href='https://www.linkedin.com/in/emily-pape-01776622a/' className='ml-5'>
+              <Icon icon='skill-icons:linkedin' color='gray' width={25} height={25} />
+            </a>
+            <a
+              target='_blank'
+              href='https://github.com/emilypape'
+              className=' flex justify-center ml-5 lg:hidden xl:hidden '>
+              <Icon icon='radix-icons:github-logo' color='gray' width={25} height={25} />
+            </a>
+          </div>
           <p className='text-start text-gray-500 lg:text-start md:text-start xl:text-start lg:mr-10 md:mr-10 xl:mr-10'>
             Hello! I'm Emily and I am an avid hiker and outdoors-woman that you can find on the computer during the
             weekdays. I consider myself an exceptionally well rounded, organized and resourceful Professional. I have
