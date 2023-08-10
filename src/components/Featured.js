@@ -1,6 +1,6 @@
 import react from 'react';
 import { Icon } from '@iconify/react';
-export default function Featured() {
+export default function Featured({ handleClickScroll }) {
   return (
     <div>
       <div className='xl:ml-52 lg:ml-52 md:ml-16 xl:mr-52 lg:mr-52 md:mr-16 mt-10'>
@@ -105,11 +105,11 @@ export default function Featured() {
             </div>
           </div>
         </div>
-        <div className='flex'>
-          <div className='text-start ml-16 lg:ml-0 md:ml-16 xl:ml-0 font-semibold text-gray-500 mt-4'>
+        <div onClick={() => handleClickScroll('Contact')} className='flex'>
+          <div className='text-start ml-16 cursor-pointer lg:ml-0 md:ml-16 xl:ml-0 font-semibold text-gray-500 mt-4'>
             Contact for all skills
           </div>
-          <div className='mt-2'>
+          <div className='mt-2 cursor-pointer'>
             <Icon icon='ic:outline-arrow-right' color='gray' width={40} height={40} />
           </div>
         </div>
