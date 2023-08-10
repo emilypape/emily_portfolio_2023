@@ -1,6 +1,6 @@
-import react from 'react';
+import { useRef } from 'react';
 
-export default function Nav() {
+export default function Nav({ handleClick }) {
   return (
     <div className='xl:ml-52 md:ml-16 lg:ml-52'>
       <div className='hidden lg:flex md:flex xl:flex text-gray-500 font-md font-semibold mt-14 mb-14'>
