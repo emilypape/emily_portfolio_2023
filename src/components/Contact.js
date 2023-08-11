@@ -39,7 +39,7 @@ export default function Contact() {
             <form
               action='https://formsubmit.co/eap6787@gmail.com'
               method='POST'
-              name='_webhook'
+              name='_next'
               value='https://emilypape.github.io/emily_portfolio_2023/'
               class='space-y-8 min-w-[40em]'>
               <div>
