@@ -38,7 +38,12 @@ export default function Contact() {
             </h2>
             <form action='https://formsubmit.co/eap6787@gmail.com' method='POST' class='space-y-8 min-w-[40em]'>
               <div>
-                <input type='hidden' name='_next' value='https://yourdomain.co/thanks.html' />
+                <input type='hidden' name='_next' value='https://emilypape.github.io/emily_portfolio_2023/' />
+                <input
+                  type='hidden'
+                  name='_autoresponse'
+                  value='Thank you for reaching out! I look forward to discussing your inquiry further!'
+                />
                 <input
                   type='email'
                   name='email'
