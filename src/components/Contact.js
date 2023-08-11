@@ -36,13 +36,9 @@ export default function Contact() {
             <h2 class='py-3 mb-4 text-3xl tracking-tight font-bold text-end text-gray-900 dark:text-black'>
               Send me a message 🚀
             </h2>
-            <form
-              action='https://formsubmit.co/eap6787@gmail.com'
-              method='POST'
-              name='_next'
-              value='https://emilypape.github.io/emily_portfolio_2023/'
-              class='space-y-8 min-w-[40em]'>
+            <form action='https://formsubmit.co/eap6787@gmail.com' method='POST' class='space-y-8 min-w-[40em]'>
               <div>
+                <input type='hidden' name='_next' value='https://yourdomain.co/thanks.html' />
                 <input
                   type='email'
                   name='email'
