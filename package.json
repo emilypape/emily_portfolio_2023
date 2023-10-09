@@ -2,7 +2,7 @@
   "name": "emily_portfolio_2023",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://emilypape.github.io/emily_portfolio_2023",
+  "homepage": "http://emilypape.github.io/searchspring-challenge",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
