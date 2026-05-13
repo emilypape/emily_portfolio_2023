@@ -1,6 +1,6 @@
-import React from 'react';
 import Nav from './Nav';
 import Bio from './Bio';
+import About from './About';
 import Featured from './Featured';
 import Portfolio from './Portfolio';
 import Contact from './Contact';
@@ -9,20 +9,23 @@ export default function Home() {
   const handleClickScroll = (el) => {
     const element = document.getElementById(el);
     if (element) {
-      // 👇 Will scroll smoothly to the top of the next section
       element.scrollIntoView({ behavior: 'smooth' });
     }
   };
+
   return (
     <div>
       <Nav handleClickScroll={handleClickScroll} />
-      <div id='Bio'>
+      <div id='Hero'>
         <Bio />
       </div>
-      <div id='Featured'>
-        <Featured handleClickScroll={handleClickScroll} />
+      <div id='About'>
+        <About />
       </div>
-      <div id='Portfolio'>
+      <div id='WhatIDo'>
+        <Featured />
+      </div>
+      <div id='Work'>
         <Portfolio />
       </div>
       <div id='Contact'>
