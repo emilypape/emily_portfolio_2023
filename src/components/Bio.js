@@ -7,7 +7,7 @@ export default function Bio() {
       <div className='max-w-6xl mx-auto px-8 lg:px-16 flex flex-col lg:flex-row items-center gap-16 py-20 w-full'>
         <div className='flex-1 flex flex-col items-center text-center'>
           <div className='text-sm font-bold tracking-widest text-indigo-400 uppercase mb-5'>
-            Lead Developer Advocate &nbsp;·&nbsp; Athos Commerce
+            Fullstack Engineer &nbsp;·&nbsp; Developer Advocate &nbsp;·&nbsp; Athos Commerce
           </div>
           <h1 className='text-6xl lg:text-7xl font-black text-white mb-6 leading-none'>
             Emily{' '}

@@ -49,7 +49,7 @@ export default function Featured() {
               <div className='bg-white rounded-2xl p-8 h-full flex flex-col'>
                 <h3 className='text-xl font-black text-slate-800 mb-4'>{title}</h3>
                 <p className='text-slate-500 text-sm leading-relaxed flex-1 mb-8'>{desc}</p>
-                <div className='flex gap-5'>
+                <div className='flex gap-5 justify-center'>
                   {icons.map((icon) => (
                     <Icon key={icon} icon={icon} color='#6b7280' width={32} height={32} />
                   ))}
