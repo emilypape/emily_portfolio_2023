@@ -1,30 +1,28 @@
-import { useRef } from 'react';
-
 export default function Nav({ handleClickScroll }) {
   return (
-    <div className='xl:ml-52 md:ml-16 lg:ml-52'>
-      <div className='hidden lg:flex md:flex xl:flex text-gray-500 font-md font-semibold mt-14 mb-14'>
+    <nav className='fixed top-0 left-0 right-0 z-50 bg-slate-900/90 backdrop-blur-sm border-b border-slate-800'>
+      <div className='max-w-6xl mx-auto px-8 lg:px-16 flex items-center justify-between py-5'>
         <div
-          onClick={() => handleClickScroll('Bio')}
-          className='hover:text-black xl:mr-10 cursor-pointer  lg:mr-10 md:mr-6 '>
-          Bio
+          onClick={() => handleClickScroll('Hero')}
+          className='text-white font-black text-xl cursor-pointer'>
+          EP<span className='text-indigo-400'>.</span>
         </div>
-        <div
-          onClick={() => handleClickScroll('Featured')}
-          className='hover:text-black xl:mr-10 cursor-pointer lg:mr-10 md:mr-6'>
-          Featured
-        </div>
-        <div
-          onClick={() => handleClickScroll('Portfolio')}
-          className='hover:text-black cursor-pointer xl:mr-10  lg:mr-10 md:mr-6'>
-          Portfolio
-        </div>
-        <div
-          onClick={() => handleClickScroll('Contact')}
-          className='hover:text-black xl:mr-10 cursor-pointer lg:mr-10 md:mr-6'>
-          Contact
+        <div className='hidden md:flex items-center gap-8 text-sm font-semibold text-slate-400'>
+          {[
+            { id: 'About', label: 'About' },
+            { id: 'WhatIDo', label: 'What I Do' },
+            { id: 'Work', label: 'Work' },
+            { id: 'Contact', label: 'Contact' },
+          ].map(({ id, label }) => (
+            <div
+              key={id}
+              onClick={() => handleClickScroll(id)}
+              className='hover:text-white cursor-pointer transition-colors duration-200'>
+              {label}
+            </div>
+          ))}
         </div>
       </div>
-    </div>
+    </nav>
   );
 }

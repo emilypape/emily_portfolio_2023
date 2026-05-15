@@ -1,85 +1,105 @@
-import { useState } from 'react';
 import { Icon } from '@iconify/react';
+
+const links = [
+  {
+    icon: 'line-md:email-twotone',
+    label: 'Email',
+    display: 'eap6787@gmail.com',
+    href: 'mailto:eap6787@gmail.com',
+  },
+  {
+    icon: 'skill-icons:linkedin',
+    label: 'LinkedIn',
+    display: 'emily-pape-01776622a',
+    href: 'https://www.linkedin.com/in/emily-pape-01776622a/',
+  },
+  {
+    icon: 'radix-icons:github-logo',
+    label: 'GitHub',
+    display: 'emilypape',
+    href: 'https://github.com/emilypape',
+  },
+];
 
 export default function Contact() {
   return (
-    <div className=' bg-gray-200'>
-      <div className=' mt-52 flex justify-between xl:ml-52 lg:ml-52 md:ml-16 xl:mr-52 lg:mr-52 md:mr-16'>
-        <div className='mt-10 hidden lg:block md:hidden xl:block'>
-          <div>
-            <div className='text-start text-3xl tracking-tight font-bold  text-black'>
-              Let's{' '}
-              <span className='font-extrabold text-transparent text-md bg-clip-text bg-gradient-to-r from-indigo-600 via-violet-500 to-fuchsia-600 '>
-                chat.
-              </span>{' '}
-            </div>
-            <div className=' text-3xl tracking-tight font-bold text-start text-black'>Tell me about your</div>
-            <div className='text-start mb-4 text-3xl font-extrabold text-transparent text-md bg-clip-text bg-gradient-to-r from-indigo-600 via-violet-500 to-fuchsia-600 '>
-              team.
-            </div>
-          </div>
-          <div className='text-gray-500 mt-5 font-bold'>Let's create something together 👋 </div>
-          <div className='shadow-lg rounded-lg p-2 mt-12 flex bg-white'>
-            <Icon icon='line-md:email-twotone' color='gray' width={40} height={40} />
-            <div className='text-start ml-5'>
-              <div className='font-bold'>Mail me at</div>
-              <a type='email' href='mailto:eap6787@gmail.com'>
-                <div className='font-extrabold text-transparent text-md bg-clip-text bg-gradient-to-r from-indigo-600 via-violet-500 to-fuchsia-600 '>
-                  eap6787@gmail.com
-                </div>
-              </a>
-            </div>
-          </div>
+    <div className='bg-slate-900 py-28'>
+      <div className='max-w-6xl mx-auto px-8 lg:px-16'>
+        <div className='text-sm font-bold tracking-widest text-indigo-400 uppercase mb-4'>
+          Contact
         </div>
-        <section class='bg-gray-200'>
-          <div class='  mx-auto max-w-screen-md'>
-            <h2 class='py-3 mb-4 text-3xl tracking-tight font-bold text-end text-gray-900 dark:text-black'>
-              Send me a message 🚀
+        <div className='lg:grid lg:grid-cols-2 gap-16 items-end'>
+          <div>
+            <h2 className='text-4xl lg:text-5xl font-black text-white mb-6 leading-tight'>
+              Let's{' '}
+              <span className='bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-indigo-400'>
+                connect.
+              </span>
             </h2>
-            <form action='https://formsubmit.co/eap6787@gmail.com' method='POST' class='space-y-8 min-w-[40em]'>
-              <div>
-                <input type='hidden' name='_next' value='https://emilypape.github.io/emily_portfolio_2023/' />
-                <input
-                  type='hidden'
-                  name='_autoresponse'
-                  value='Thank you for reaching out! I look forward to discussing your inquiry further!'
-                />
-                <input
-                  type='email'
-                  name='email'
-                  id='email'
-                  class='shadow-sm bg-white-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 '
-                  placeholder='email*'
-                  required
-                />
-              </div>
-              <div>
-                <input
-                  type='text'
-                  name='subject'
-                  id='subject'
-                  class='block p-3 w-full text-sm text-gray-900 bg-white-50 rounded-lg border border-gray-400 shadow-sm focus:ring-primary-500 focus:border-primary-500  dark:border-gray-300 dark:placeholder-gray-400  dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light'
-                  placeholder='subject*'
-                  required
-                />
-              </div>
-              <div class='sm:col-span-2'>
-                <textarea
-                  type='text'
-                  name='message'
-                  id='message'
-                  rows='6'
-                  class='block p-2.5 w-full text-sm  bg-white-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 '
-                  placeholder='Tell me a little more about the role...'></textarea>
-              </div>
+            <p className='text-slate-400 text-lg mb-10 leading-relaxed'>
+              Whether you want to talk engineering, developer experience, or have a role that sounds
+              like a fit — I'd love to hear from you.
+            </p>
+            <div className='space-y-3'>
+              {links.map(({ icon, label, display, href }) => (
+                <a
+                  key={label}
+                  href={href}
+                  target='_blank'
+                  rel='noreferrer'
+                  className='flex items-center gap-4 p-4 bg-slate-800 rounded-xl hover:bg-slate-700 transition-colors duration-200'>
+                  <Icon icon={icon} color='#818cf8' width={26} height={26} />
+                  <div>
+                    <div className='text-xs text-slate-400 font-semibold mb-0.5'>{label}</div>
+                    <div className='text-indigo-400 font-semibold text-sm'>{display}</div>
+                  </div>
+                </a>
+              ))}
+            </div>
+          </div>
+          <div className='mt-12 lg:mt-0'>
+            <form
+              action='https://formsubmit.co/eap6787@gmail.com'
+              method='POST'
+              className='space-y-4'>
+              <input
+                type='hidden'
+                name='_next'
+                value='https://emilypape.github.io/emily_portfolio_2026/'
+              />
+              <input
+                type='hidden'
+                name='_autoresponse'
+                value='Thanks for reaching out — I look forward to connecting!'
+              />
+              <input
+                type='email'
+                name='email'
+                placeholder='Your email*'
+                required
+                className='w-full px-4 py-3 bg-slate-800 border border-slate-700 text-white placeholder-slate-400 rounded-xl focus:outline-none focus:border-indigo-500 transition-colors'
+              />
+              <input
+                type='text'
+                name='subject'
+                placeholder='Subject*'
+                required
+                className='w-full px-4 py-3 bg-slate-800 border border-slate-700 text-white placeholder-slate-400 rounded-xl focus:outline-none focus:border-indigo-500 transition-colors'
+              />
+              <textarea
+                name='message'
+                rows={5}
+                placeholder='Your message...'
+                className='w-full px-4 py-3 bg-slate-800 border border-slate-700 text-white placeholder-slate-400 rounded-xl focus:outline-none focus:border-indigo-500 transition-colors resize-none'
+              />
               <button
                 type='submit'
-                class='font-semibold mt-10  py-2  text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300   rounded-lg text-sm px-8 py-2.5 text-center mr-2 mb-16'>
+                className='w-full py-3 bg-gradient-to-r from-purple-600 to-indigo-600 text-white font-bold rounded-xl hover:opacity-90 transition-opacity'>
                 Send Message
               </button>
             </form>
           </div>
-        </section>
+        </div>
       </div>
     </div>
   );
