@@ -16,8 +16,8 @@ export default function Bio() {
             </span>
           </h1>
           <p className='text-xl text-slate-300 mb-10 leading-relaxed max-w-lg'>
-            I bridge the gap between complex APIs and the developers who use them — building the
-            tools, docs, and experiences that make great products feel effortless.
+            I bridge the gap between complex APIs and the developers who use them, building the tools, docs, and
+            experiences that make great products feel effortless.
           </p>
           <div className='flex gap-4 flex-wrap justify-center'>
             <a
